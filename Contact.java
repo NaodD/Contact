@@ -28,7 +28,7 @@ public class Contact {
 		else {
 		}
 	}
-		public void editNumber(String n){
+	public void editNumber(String n){
 		this.number = n;
 	}
 	
