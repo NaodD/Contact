@@ -27,5 +27,25 @@ public class Contact {
 		}
 		else {
 		}
-	}		
+	}
+		public void editNumber(String n){
+		this.number = n;
+	}
+	
+	public void editSurname(String n){
+		this.surname = n;
+	}
+	
+	public void editGivenname(String n){
+		this.givenname = n;
+	}
+	
+	public void deleteNumber(String n){
+		this.number = null;
+	}
+	
+	public void deleteName(String n){
+		this.givenname = null;
+		this.surname = null;
+	}
 }
