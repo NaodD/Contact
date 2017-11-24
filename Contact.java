@@ -2,16 +2,20 @@ package mainPackage;
 
 
 public class Contact {
-	public String givenname,surname,number;
+	private String givenname,surname,number, address, email;
 	
-	//default constructor
+	
 	public Contact() {
 		givenname = "";
 		surname = "";
 		number = "";
+		address = "";
+		email = "";
+	
+		
 	}
 	
-	public Contact(String gvnm,String srnm, String nmbr) {
+	public Contact(String gvnm,String srnm, String nmbr, String adrs,String ml) {
 		this.givenname = gvnm;
 		this.surname = srnm;
 		this.number = nmbr;
@@ -48,4 +52,13 @@ public class Contact {
 		this.givenname = null;
 		this.surname = null;
 	}
+	public void editAddress(String n) {
+		this.address= n;
+		
+	}
 }
+/* When we first thought of our Contact class, we first thought of the instance variables that we would use,
+ * and what type they would be declared as in our code. We reasoned that making all of our instance variables 
+ * String types was the easiest way to store all of the data of a contact, as contact numbers and emails have
+ * many compenents that have numbers and chracters existing simultaneuosly in the data storage  
+ */  																						
